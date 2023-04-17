@@ -1,12 +1,21 @@
-import Model from "./components/Model";
-import Navbar from "./components/Navbar";
+import DevelopmentTimeline from "./components/DevelopmentTimeline";
+import RX7e from "./components/RX7e";
+import Home from "./components/Home";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="bg-[url('./assets/Homepage-rx7-image-small.webp')] lg:bg-[url('./assets/Homepage-rx7-image-large.webp')] h-screen bg-cover bg-center">
-      <Navbar />
-      <Model />
-    </div>
+    <>
+
+
+
+
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/development-timeline" element={<DevelopmentTimeline/>} />
+        <Route path="/RX7e" element={<RX7e/>} />
+      </Routes>
+    </>
   );
 }
 

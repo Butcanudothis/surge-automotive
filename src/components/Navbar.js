@@ -1,21 +1,30 @@
 import React from "react";
 import teslaLogo from "../assets/teslaLogo.svg";
 
-const Navbar = () => {
+const Navbar = (
+  {textColor = "text-black"}
+) => {
   return (
-    <div className="flex justify-between items-center px-12 p-4 text-sm font-bold ">
+    <div className={'flex justify-between items-center px-12 p-4 text-sm font-bold ' + textColor }>
       <div>
+        <a href="/">
         <img className="h-3" src={teslaLogo} alt="tesla logo" />
+        </a>
       </div>
 
       <div className="hidden lg:inline">
         <ul className="flex justify-center hover:cursor-pointer">
-          <li className="py-1 px-3 hover:rounded hover:bg-black/5">RX 7</li>
-          <li className="py-1 px-3 hover:rounded hover:bg-black/5">Model 3</li>
-          <li className="py-1 px-3 hover:rounded hover:bg-black/5">Model X</li>
-          <li className="py-1 px-3 hover:rounded hover:bg-black/5">Model Y</li>
-          <li className="py-1 px-3 hover:rounded hover:bg-black/5">Solar Roof</li>
-          <li className="py-1 px-3 hover:rounded hover:bg-black/5">Solar Panels</li>
+          <a href="/RX7e">
+          <li className="py-1 px-3 hover:rounded hover:bg-black/5">RX 7e</li>
+          </a>
+
+          <li className="py-1 px-3 hover:rounded hover:bg-black/5">Projects</li>
+          <a href="/development-timeline">
+          <li className="py-1 px-3 hover:rounded hover:bg-black/5">Development</li>
+          </a>
+          <li className="py-1 px-3 hover:rounded hover:bg-black/5">Contact</li>
+          <li className="py-1 px-3 hover:rounded hover:bg-black/5">Services</li>
+          <li className="py-1 px-3 hover:rounded hover:bg-black/5">About</li>
         </ul>
       </div>
 

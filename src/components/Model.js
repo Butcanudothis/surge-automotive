@@ -15,9 +15,9 @@ const Model = () => {
       </div>
       <div className="flex flex-col items-center justify-center text-sm lg:flex-row absolute inset-x-0 bottom-[10%]"
       >
-        <button className="bg-[#393c41] rounded-md w-96 lg:w-64 lg:mx-4 h-10 mt-2 text-white"
+        <button className="bg-[#393c41] rounded-md w-96 lg:w-64 lg:mx-4 h-10 mt-2 text-white hover:animate-pulse"
         >Custom Order</button>
-        <button className="bg-[#f4f4f4] rounded-md w-96 lg:w-64 lg:mx-4 h-10 mt-2">Existing Inventory</button>
+        <button className="bg-[#f4f4f4] rounded-md w-96 lg:w-64 lg:mx-4 h-10 mt-2 hover:animate-pulse">Existing Inventory</button>
       </div>
       <div className="flex justify-center animate-bounce absolute inset-x-0 bottom-[3%]"
       >
