@@ -23,11 +23,11 @@ const Model = () => {
         </div>
         <div className="flex place-items-center justify-center text-center gap-[10%] pb-3 text-gray-200
         absolute inset-x-0 bottom-[13%]">
-          <ul className="animate-in slide-in-from-bottom-full duration-400">
+          <ul className="animate-in slide-in-from-bottom-full duration-1000">
             <li className="text-2xl font-bold ">396mi</li>
             <li className="text-sm">Range</li>
           </ul>
-          <ul  className="animate-in slide-in-from-bottom-full duration-500">
+          <ul  className="animate-in slide-in-from-bottom-full duration-1000">
             <li className="text-2xl font-bold">1.5s</li>
             <li className="text-sm">0-60 mph</li>
           </ul>
