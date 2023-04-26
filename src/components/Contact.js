@@ -53,7 +53,7 @@ const Contact = () => {
       <div className="mb-4">
         <label htmlFor="name" className="block text-white font-medium mb-2">Name:</label>
         <input
-          type="text"
+          type="text" name="name"
           id="name"
           value={name}
           onChange={(event) => setName(event.target.value)}
@@ -64,7 +64,7 @@ const Contact = () => {
       <div className="mb-4">
         <label htmlFor="email" className="block text-white font-medium mb-2">Email:</label>
         <input
-          type="email"
+          type="email" name="email"
           id="email"
           value={email}
           onChange={(event) => setEmail(event.target.value)}
@@ -75,7 +75,7 @@ const Contact = () => {
       <div className="mb-4">
         <label htmlFor="phone" className="block text-white font-medium mb-2">Phone:</label>
         <input
-          type="tel"
+          type="tel" name="phone"
           id="phone"
           value={phone}
           onChange={(event) => setPhone(event.target.value)}
@@ -85,7 +85,7 @@ const Contact = () => {
       <div className="mb-4">
         <label htmlFor="message" className="block text-white font-medium mb-2">Message:</label>
         <textarea
-          id="message"
+          id="message" name="message"
           value={message}
           onChange={(event) => setMessage(event.target.value)}
           required
