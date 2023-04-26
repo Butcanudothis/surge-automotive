@@ -47,8 +47,9 @@ const Contact = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900">
     <form onSubmit={handleSubmit} className="bg-black bg-opacity-90 backdrop-filter backdrop-blur-lg p-8 rounded-lg shadow-lg"
-    data-netlify="true"
+    data-netlify="true" name="contact"
     >
+      <input type="hidden" name="form-name" value="contact" />
       <div className="mb-4">
         <label htmlFor="name" className="block text-white font-medium mb-2">Name:</label>
         <input
