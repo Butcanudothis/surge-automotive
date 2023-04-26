@@ -26,25 +26,38 @@ const Navbar = ({ textColor = "text-black" }) => {
           <a href="/RX7e">
             <li className="py-1 px-3 hover:rounded hover:bg-black/5">RX 7e</li>
           </a>
-
-          <li className="py-1 px-3 hover:rounded hover:bg-black/5">Projects</li>
+          <a href="/projects">
+            <li className="py-1 px-3 hover:rounded hover:bg-black/5">
+              Projects
+            </li>
+          </a>
           <a href="/development-timeline">
             <li className="py-1 px-3 hover:rounded hover:bg-black/5">
               Development
             </li>
           </a>
           <a href="/contact-form">
-          <li className="py-1 px-3 hover:rounded hover:bg-black/5">Contact</li>
+            <li className="py-1 px-3 hover:rounded hover:bg-black/5">
+              Contact
+            </li>
           </a>
+          <a href="services">
           <li className="py-1 px-3 hover:rounded hover:bg-black/5">Services</li>
+          </a>
+          <a href="about">
           <li className="py-1 px-3 hover:rounded hover:bg-black/5">About</li>
+          </a>
         </ul>
       </div>
 
       <div className="hidden lg:inline">
         <ul className="flex justify-center hover:cursor-pointer">
+          <a href="/shop">
           <li className="py-1 px-3 hover:rounded hover:bg-black/5">Shop</li>
+          </a>
+          <a href="/account">
           <li className="py-1 px-3 hover:rounded hover:bg-black/5">Account</li>
+          </a>
           <li
             onClick={handleSideMenu}
             className="py-1 px-3 hover:rounded hover:bg-black/5"
@@ -77,32 +90,45 @@ const Navbar = ({ textColor = "text-black" }) => {
         </div>
         <ul className="pt-8 px-6">
           <a href="/RX7e">
-          <li className="py-3 px-3 hover:rounded hover:bg-black/5 text-black">
-            RX 7e
-          </li>
+            <li className="py-3 px-3 hover:rounded hover:bg-black/5 text-black">
+              RX 7e
+            </li>
           </a>
+          <a href="/projects">
           <li className="py-3 px-3 hover:rounded hover:bg-black/5 text-black">
             Projects
           </li>
+          </a>
+          <a href="/development-timeline">
           <li className="py-3 px-3 hover:rounded hover:bg-black/5 text-black">
             Development
           </li>
+          </a>
+          <a href="/contact-form">
           <li className="py-3 px-3 hover:rounded hover:bg-black/5 text-black">
             Contact
           </li>
+          </a>
+          <a href="services">
           <li className="py-3 px-3 hover:rounded hover:bg-black/5 text-black">
             Services
           </li>
-
+          </a>
+          <a href="about">
           <li className="py-3 px-3 hover:rounded hover:bg-black/5 text-black">
             About
           </li>
+          </a>
+          <a href="/shop">
           <li className="py-3 px-3 hover:rounded hover:bg-black/5 text-black">
             Shop
           </li>
+          </a>
+          <a href="/account">
           <li className="py-3 px-3 hover:rounded hover:bg-black/5 text-black">
             Account
           </li>
+          </a>
         </ul>
       </div>
     </div>

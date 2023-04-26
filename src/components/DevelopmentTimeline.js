@@ -84,7 +84,7 @@ const DevelopmentTimeline = () => {
     <>
       <div
         className=" bg-[url('./assets/Mazda-RX-7-blackandsilver-small.webp')] lg:bg-[url('./assets/Mazda-RX-7-blackandsilver-large.webp')]
-        bg-cover text-white m-0 before:content-[''] before:absolute before:w-full before:h-full before:z-[0] before:left-0 before:top-0;
+        bg-cover text-white m-0 before:content-[''] before:absolute before:w-full before:h-full before:z-[-1] before:left-0 before:top-0;
     bg-black  ; "
       >
         <Navbar textColor="text-white" />
@@ -101,13 +101,11 @@ const DevelopmentTimeline = () => {
           ))}
         </div>
         {/* add a blank checkpoint with border so that the timeline ends */}
-        <div className="max-w-[34em] relative py-[2em] w-full px-0 border-[none] before:w-[3px] before:h-[4em] before:top-[-2em] before:-translate-x-2/4 before:left-2/4;
+        <div
+          className="max-w-[34em] relative py-[2em] w-full px-0 border-[none] before:w-[3px] before:h-[4em] before:top-[-2em] before:-translate-x-2/4 before:left-2/4;
       transform: none;;
-  }">
-
-
-
-          </div>
+  }"
+        ></div>
       </div>
     </>
   );
