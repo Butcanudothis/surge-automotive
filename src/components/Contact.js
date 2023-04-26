@@ -17,7 +17,7 @@ const Contact = () => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
-  const [success, setSuccess] = useState("");
+  const [success] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
