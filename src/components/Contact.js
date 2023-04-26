@@ -9,7 +9,7 @@
 // Path: src/components/Contact.js
 
 import React, { useState } from "react";
-import Email from "https://smtpjs.com/v3/smtp.js";
+//import Email from "https://smtpjs.com/v3/smtp.js";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -29,27 +29,27 @@ const Contact = () => {
     }
 
     // Use SMTP.js to send email
-    Email.send({
-      SecureToken: "YOUR_SECURE_TOKEN",
-      To: "recipient@example.com",
-      From: email,
-      Subject: "New message from " + name,
-      Body: `
-        <h3>Message from ${name}</h3>
-        <p>Email: ${email}</p>
-        <p>Phone: ${phone}</p>
-        <p>Message: ${message}</p>
-      `,
-    }).then(
-      (message) => {
-        setSuccess("Email sent successfully!");
-        setError("");
-      },
-      (error) => {
-        setError("Unable to send email. Please try again later.");
-        setSuccess("");
-      }
-    );
+    // Email.send({
+    //   SecureToken: "YOUR_SECURE_TOKEN",
+    //   To: "recipient@example.com",
+    //   From: email,
+    //   Subject: "New message from " + name,
+    //   Body: `
+    //     <h3>Message from ${name}</h3>
+    //     <p>Email: ${email}</p>
+    //     <p>Phone: ${phone}</p>
+    //     <p>Message: ${message}</p>
+    //   `,
+    // }).then(
+    //   (message) => {
+    //     setSuccess("Email sent successfully!");
+    //     setError("");
+    //   },
+    //   (error) => {
+    //     setError("Unable to send email. Please try again later.");
+    //     setSuccess("");
+    //   }
+    // );
   };
 
   return (

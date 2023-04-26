@@ -1,7 +1,6 @@
 import React from "react";
 import { FiChevronDown } from "react-icons/fi";
 import Navbar from "./Navbar";
-import tailwindcssAnimate from "tailwindcss-animate";
 
 
 
