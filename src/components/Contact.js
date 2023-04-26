@@ -55,7 +55,8 @@ const Contact = () => {
         <div className="flex flex-col items-center justify-center min-h-screen ">
           <form
             onSubmit={handleSubmit}
-            className="bg-black bg-opacity-70 backdrop-filter backdrop-blur-lg p-8 rounded-lg shadow-lg"
+            className="bg-black bg-opacity-70 backdrop-filter backdrop-blur-lg p-8 rounded-lg shadow-lg w-[90%] lg:w-[50%]
+            "
             data-netlify="true"
             name="contact"
           >
