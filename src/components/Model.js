@@ -19,8 +19,7 @@ const Model = () => {
         >Custom Order</button>
         <button className="bg-[#f4f4f4] rounded-md w-96 lg:w-64 lg:mx-4 h-10 mt-2 hover:animate-pulse">Existing Inventory</button>
       </div>
-      <div className="flex justify-center animate-bounce absolute inset-x-0 bottom-[3%]"
-      >
+      <div className="flex justify-center animate-bounce absolute inset-x-0 bottom-[3%]">
         <FiChevronDown />
       </div>
     </div>

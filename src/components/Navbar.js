@@ -33,7 +33,9 @@ const Navbar = ({ textColor = "text-black" }) => {
               Development
             </li>
           </a>
+          <a href="/contact-form">
           <li className="py-1 px-3 hover:rounded hover:bg-black/5">Contact</li>
+          </a>
           <li className="py-1 px-3 hover:rounded hover:bg-black/5">Services</li>
           <li className="py-1 px-3 hover:rounded hover:bg-black/5">About</li>
         </ul>
@@ -74,9 +76,11 @@ const Navbar = ({ textColor = "text-black" }) => {
           />
         </div>
         <ul className="pt-8 px-6">
+          <a href="/RX7e">
           <li className="py-3 px-3 hover:rounded hover:bg-black/5 text-black">
             RX 7e
           </li>
+          </a>
           <li className="py-3 px-3 hover:rounded hover:bg-black/5 text-black">
             Projects
           </li>

@@ -31,7 +31,7 @@ const Model = () => {
             <li className="text-2xl font-bold">1.5s</li>
             <li className="text-sm">0-60 mph</li>
           </ul>
-          <ul  className="animate-in slide-in-from-bottom-full duration-1000">
+          <ul  className="animate-in slide-in-from-bottom-full duration-[10000]">
             <li className="text-2xl font-bold">1,050 hp</li>
             <li className="text-sm">Peak Power</li>
           </ul>

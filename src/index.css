@@ -10,3 +10,72 @@
 * {
     font-family: "gotham Book"
 }
+
+#root {
+    background: #ffffff;
+}
+
+
+
+  .title {
+    @apply text-center;
+  }
+  .title p {
+    @apply text-[1.3em] tracking-[2px];
+  }
+  .timeline {
+    @apply max-w-[34.15em] mx-auto my-[5em];
+  }
+  .checkpoint {
+    @apply max-w-[34em] relative py-[2em];
+  }
+  .checkpoint div {
+    @apply p-[1.5em] rounded-[1em] border-2 border-solid bg-white
+;
+  }
+  .checkpoint p {
+    @apply leading-[27px] text-[#000000];
+  }
+  .checkpoint:nth-child(odd) {
+    @apply translate-x-[17em] pl-[2em] border-l-[2px] border-l-[#ffffff] border-dashed;
+  }
+  .checkpoint:nth-child(even) {
+    @apply translate-x-[-270px] pr-[3em] border-r-[2px] border-r-[#ffffff] border-dashed ;
+  }
+  •checkpoint:nth-child(odd)::before,
+  •checkpoint:nth-child(even)::before {
+    @apply content-[''] w-[3em] h-[3px] absolute -translate-x-2/4 top-2/4;
+    background: #ffffff;
+  }
+  •checkpoint:nth-child(even)::before {
+    @apply right-0;
+  }
+  •checkpoint:nth-child(odd) div::before,
+  •checkpoint:nth-child(even) div::before {
+    @apply content-[''] shadow-[0_0_0.5em_#0d71fc] w-[0.8em] h-[0.8em] absolute -translate-y-2/4 rounded-[50%] top-2/4;
+    background: #fff;
+  }
+  .checkpoint:nth-child(odd) div::before {
+    @apply left-[-0.5em];
+  }
+  .checkpoint:nth-child(even) div::before {
+    @apply right-[-0.5em];
+  }
+  @media screen and (max-width: 1199px) {
+    .timeline {
+      @apply w-[80vw];
+    }
+    .timeline .checkpoint {
+      @apply w-full px-0 border-[none] before:w-[3px] before:h-[4em] before:top-[-2em] before:-translate-x-2/4 before:left-2/4;
+      transform: none;
+    }
+    .timeline .checkpoint div::before {
+      @apply top-[-0.5em] -translate-x-2/4 left-2/4;
+    }
+     .checkpoint:nth-child(even) {
+    @apply pl-[3em] border-l-[3px] border-l-[#888] border-transparent ;
+  }
+  .checkpoint:nth-child(odd) {
+    @apply pl-[3em] border-l-[3px] border-l-[#888] border-dashed ;
+  }
+  }
