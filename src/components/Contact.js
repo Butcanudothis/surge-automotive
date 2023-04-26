@@ -9,7 +9,6 @@
 // Path: src/components/Contact.js
 
 import React, { useState } from "react";
-//import Email from "https://smtpjs.com/v3/smtp.js";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -17,44 +16,39 @@ const Contact = () => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
-  const [success] = useState("");
+  const [success, setSuccess] = useState("");
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+    const handleSubmit = (event) => {
+      event.preventDefault();
 
-    // Check that required fields are filled in
-    if (!name || !email || !message) {
-      setError("Please fill in all required fields");
-      return;
-    }
+      // Check that required fields are filled in
+      if (!name || !email || !message) {
+        setError("Please fill in all required fields");
+        return;
+      }
 
-    // Use SMTP.js to send email
-    // Email.send({
-    //   SecureToken: "YOUR_SECURE_TOKEN",
-    //   To: "recipient@example.com",
-    //   From: email,
-    //   Subject: "New message from " + name,
-    //   Body: `
-    //     <h3>Message from ${name}</h3>
-    //     <p>Email: ${email}</p>
-    //     <p>Phone: ${phone}</p>
-    //     <p>Message: ${message}</p>
-    //   `,
-    // }).then(
-    //   (message) => {
-    //     setSuccess("Email sent successfully!");
-    //     setError("");
-    //   },
-    //   (error) => {
-    //     setError("Unable to send email. Please try again later.");
-    //     setSuccess("");
-    //   }
-    // );
-  };
+      // Use Netlify's form submission handling
+      const form = event.target;
+      fetch("/", {
+        method: "POST",
+        body: new FormData(form),
+      })
+        .then(() => {
+          setSuccess("Email sent successfully!");
+          setError("");
+        })
+        .catch(() => {
+          setError("Unable to send email. Please try again later.");
+          setSuccess("");
+        });
+    };
+
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900">
-    <form onSubmit={handleSubmit} className="bg-black bg-opacity-90 backdrop-filter backdrop-blur-lg p-8 rounded-lg shadow-lg">
+    <form onSubmit={handleSubmit} className="bg-black bg-opacity-90 backdrop-filter backdrop-blur-lg p-8 rounded-lg shadow-lg"
+    data-netlify="true"
+    >
       <div className="mb-4">
         <label htmlFor="name" className="block text-white font-medium mb-2">Name:</label>
         <input
