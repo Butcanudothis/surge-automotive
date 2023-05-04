@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+## Surge Automotive Website 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/582f90eb-9f22-4b1d-a78b-74afab3e44b4/deploy-status)](https://app.netlify.com/sites/butcanudothis-surgeautomotive/deploys)
 
-## Available Scripts
+This is the repository for the Surge Automotive website, a company that specializes in electric vehicle (EV) conversions. The website was built using React, Tailwind CSS, and React Router. The purpose of this website is to showcase Surge Automotive's services, provide information on their projects, and offer a platform for potential customers to get in touch with them.
 
-In the project directory, you can run:
+### Installation
 
-### `npm start`
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Install the necessary dependencies using `npm install`.
+4. Start the development server using `npm start`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Changelog
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Apr 27, 2023
+- Fixed a scaling issue on the Contact page.
 
-### `npm test`
+#### Apr 26, 2023
+- Fixed navigation and added a Coming Soon page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Apr 25, 2023
+- Added a hidden form to index.html.
+- Added a hidden field to the form for Netlify form submission.
+- Added Netlify form detection.
+- Added a _redirects file to the public folder to fix Netlify routing issues.
+- Removed unused variables from Contact.js.
+- Removed unnecessary imports and disabled emailjs.
+- Fixed build issues due to an invalid Tailwind CSS class.
+- Added DevelopmentTimeline and Contact components, deploying to Netlify.
 
-### `npm run build`
+#### Apr 19, 2023
+- Added a navigation sidebar and changed the page title.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Apr 18, 2023
+- Made major changes to the site navigation using react-router-dom and added animations to RX7e.js.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Apr 17, 2023
+- Initial commit with a basic landing page and navbar.
+- Initialized the project using Create React App.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Components
 
-### `npm run eject`
+The following components were used in the development of this website:
+- App.js
+- Home.js
+- Navbar.js
+- ComingSoon.js
+- Contact.js
+- RX7e.js
+- DevelopmentTimeline.js
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- react
+- react-dom
+- react-icons
+- react-router-dom
+- tailwindcss
+- autoprefixer
+- postcss
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Contributors
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Butcanudothis
